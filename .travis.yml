@@ -1,12 +1,7 @@
-sudo: required
-group: legacy
-
-before_install:
-  - sudo apt-get update
-
-
+sudo: false
+language: java
 
 script:
-  - echo hello
-#  - javac Hello.java
-#  - java Hello
+
+  - javac Hello.java
+  - java Hello
