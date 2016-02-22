@@ -1,8 +1,11 @@
 sudo: false
-language: java
-script:
-- javac Hello.java
-- java Hello
-before_install:
-- openssl aes-256-cbc -K $encrypted_34594c4e784a_key -iv $encrypted_34594c4e784a_iv
-  -in hola.txt.enc -out hola.txt -d
+dist: precise
+language: ruby
+install: /bin/true
+script: /bin/true
+addons:
+  apt:
+    packages:
+      - ia32-libs
+      - ia32-libs-multiarch
+      - libgd2-xpm
