@@ -2,6 +2,6 @@ sudo: false
 language: generic
 
 script:
-  - echo hi
+  - echo hola
 #  - javac Hello.java
 #  - java Hello
