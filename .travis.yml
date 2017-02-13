@@ -4,7 +4,7 @@ sudo: required
 dist: trusty
 
 script:
-  - echo hi
   - python --version
+  - df -h
 #  - javac Hello.java
 #  - java Hello
