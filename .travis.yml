@@ -5,6 +5,7 @@ dist: trusty
 
 script:
   - python --version
+  - pip --version
   - df -h
 #  - javac Hello.java
 #  - java Hello
