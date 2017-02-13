@@ -1,7 +1,21 @@
-sudo: false
-language: generic
+language: python
 
+matrix:
+  include:
+    - sudo: false
+      dist: precise
+      env: EC2-Precise
+    - sudo: false
+      dist: trusty
+      env: EC2-Trusty
+    - sudo: required
+      dist: precise
+      env: GCE-Precise
+    - sudo: required
+      dist: trusty
+      env: GCE-Trusty
 script:
+  - df -h
   - echo hi
 #  - javac Hello.java
 #  - java Hello
